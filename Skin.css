@@ -6,18 +6,41 @@
     background-position: center;
     background-attachment: fixed;
 }
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(82, 136, 220, 0.5);
+    z-index: 100;
+}
+
 .navbarmenu{
     color: bisque;
     font-weight: bold;
+    left: 0;
+    letter-spacing: 2px;
 }
 
 .navbarmenu:hover{
-    color: blueviolet;
+    color: rgb(113, 167, 15);
     scale: 1.5;
     transition: 0.2s ease-in-out;
 }
+a{
+    color: wheat ;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    transition: 0.2s ease-in-out;
+    color: beige;
+    scale: 1.5;
+
+}
+
 .logoSize{
-    width: 250px;
+    width: 210px;
     height: auto;
 }
 
@@ -25,12 +48,12 @@
     align-items: center;
 }
 
-.momma{
-    width: 700px;
+.poster{
+    width: 100%;
     height: auto;
+    
 }
 
-.kid{
-    width: 500px;
-    height: auto;
+.slide{
+    control-color: white;
 }
