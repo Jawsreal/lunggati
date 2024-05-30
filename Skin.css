@@ -1,3 +1,66 @@
+/*--------------------------------------------------------------
+# noscrollbar
+--------------------------------------------------------------*/
+
+body::-webkit-scrollbar{
+	display: none;
+
+}
+
+/*--------------------------------------------------------------
+# Cursor
+--------------------------------------------------------------*/
+html {
+    cursor:url(Arrow.cur),auto;}
+	
+a {
+    cursor:url(aero_arrow.cur),auto;}
+	
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back2top {
+	background-color: rgba(82, 136, 220, 0.5);
+	margin: 20px;
+	width: 50px;
+	height: 50px;
+	transition: 0.3s;
+}
+
+.back2top:hover{
+	scale: 1.2;
+	transition: 0.3s;
+}
+
+
+/*--------------------------------------------------------------
+# Gallery button backgroung color
+--------------------------------------------------------------*/
+.colorizeleft {
+	background-image: linear-gradient(to right, #ffffff40 ,  #00000000);
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.colorizeright {
+	background-image: linear-gradient(to right, #00000000 ,  #ffffff40);
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.colorizeleft:hover {
+	opacity: 1;
+	transition: all 0.3s;
+}
+
+.colorizeright:hover {
+	opacity: 1;
+	transition: all 0.3s;
+}
+/*--------------------------------------------------------------
+# ???
+--------------------------------------------------------------*/
+	
 .bg{
     width: 100%;
     height: 100vh;
@@ -9,9 +72,11 @@
 
 .header{
     position: fixed;
+    padding-left: 200px;
+    padding-right: 200px;
     width: 100%;
-    height: 100px;
-    background-color: rgba(82, 136, 220, 0.5);
+    height: 80px;
+    background-color: rgba(82, 136, 220);
     z-index: 100;
 }
 
@@ -31,16 +96,17 @@ a{
     color: wheat ;
     text-decoration: none;
     font-weight: bold;
+	transition: 0.3s;
 }
 a:hover{
-    transition: 0.2s ease-in-out;
+    transition: 0.2s;
     color: beige;
     scale: 1.5;
 
 }
 
 .logoSize{
-    width: 210px;
+    width: 170px;
     height: auto;
 }
 
@@ -56,4 +122,21 @@ a:hover{
 
 .slide{
     control-color: white;
+}
+
+.txtw{
+	color: beige;
+}
+
+.paddingLR{
+    padding-left: 225px;
+    padding-right: 225px;
+
+}
+
+.bgDIV1{
+    background-image: url(LUNGGATI POSTER.png)!important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
 }

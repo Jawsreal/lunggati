@@ -33,19 +33,23 @@
         </div>
         
         <!--SECTION 1-->
-        <div id="home" class="container-fluid">
-        <div class="row">
-                <div class="col-12">
-                    <img src="images/LUNGGATI POSTER.png" class="poster">
+        <div id="home">
+               <div class="row">
+                <img src="images/LUNGGATI POSTER.png" class="poster">
                 </div>
+                <div class="row-6 d-flex justify-content-center calign py-5">
+                    <iframe style="position:relative;" width="800px" height="500px" src="https://www.youtube.com/embed/34GJeemh0Gk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+               </div>
         </div>
-        </div>
+		
         <!---SECTION 2 VIDEOS--->
-        <div id="videos" class="container py-5" >
+		<div id="videos" class="py-5">
+        <div class="py-5  paddingLR" >
             <div class="episode">
-                <h1 class="h1">VIDEO EPISODES</h1>
+                <h1 class="h1 txtw">VIDEO EPISODES</h1>
             </div>
         </div>
+		</div>
         <div class="container">
             <div class="row">
 
@@ -86,12 +90,13 @@
        </div>
 
        <!--SECTION 3 GALLERY-->
-
-       <div id="gallery" class="container py-5">
+		<div id="gallery" class="py-5">
+       <div class="py-5 paddingLR">
             <div class="gallery">
-                <h1 class="h1">GALLERY</h1>
+                <h1 class="h1 txtw">GALLERY</h1>
             </div>
        </div>
+		</div>
        <div class="container">
       
             <div class="row">
@@ -104,7 +109,7 @@
                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                         
                         </div>
-                        <div class="carousel-inner">
+                        <div class="carousel-inner rounded">
                           <div class="carousel-item active" data-bs-interval="4000">
                             <img src="images/1.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
@@ -134,23 +139,24 @@
                             </div>
                           </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <button class="carousel-control-prev  colorizeleft rounded" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <button class="carousel-control-next colorizeright rounded" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
                       </div>
+                </div>
             </div>
        </div>
 
        <!--SECTION 3 GALLERY 2-->
 
-       <div class="container">
+       <div class="py-5 paddingLR">
             <div class="more">
-                <h3 class="h1">more about the arts</h3>
+                <h3 class="h1 txtw">more about the arts</h3>
             </div>
        </div>
        <div class="container py-5">
@@ -197,9 +203,9 @@
 
 
        <!--SECTION 4 ABOUT US-->
-       <div id="team" class="container py-5">
-            <div class="team">
-                <h1 class="h1">THE TEAM</h1>
+       <div id="team1" class="py-5 paddingLR">
+            <div>
+                <h1 class="h1 txtw">THE TEAM</h1>
             </div>
        </div>
        <div class="container">
@@ -207,7 +213,7 @@
         <div class="row">
             <div class="col-4 d-flex justify-content-center calign" data-aos="flip-up" data-aos-delay="500" data-aos-duration="1500">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="images/1.png" alt="Card image cap">
+                    <img class="card-img-top" src="images/BG.png" alt="Card image cap">
                     <div class="card-body">
                     <h5 class="card-title" style="text-align: center;">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -254,7 +260,20 @@
             </div>
         </div>
    </div>
-
+   <!--BACK TO TOP-->
+		<div class="position-fixed bottom-0 end-0" data-aos="slide-up" data-aos-delay="1500" data-aos-duration="1000">
+			<a href="#home" class="">
+				<div class="back2top rounded-circle d-flex justify-content-center calign">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+					  <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+					</svg>
+				</div>
+			</a>
+		</div>
+		
+		
+		
+		
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
         AOS.init();
