@@ -21,15 +21,15 @@ a {
 --------------------------------------------------------------*/
 .back2top {
 	background-color: rgba(82, 136, 220, 0.5);
-	margin: 20px;
+    margin: 30px;
 	width: 50px;
 	height: 50px;
-	transition: 0.3s;
+    transition: 0.3s;
 }
 
 .back2top:hover{
 	scale: 1.2;
-	transition: 0.3s;
+    transition: 0.3s;
 }
 
 
@@ -60,7 +60,100 @@ a {
 /*--------------------------------------------------------------
 # ???
 --------------------------------------------------------------*/
-	
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+.containergrid {  display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "big-1 big-1 med-1 med-1 med-1"
+      "big-1 big-1 med-2 big-2 big-2"
+      "sml-1 sml-2 med-2 big-2 big-2";
+  }
+  
+  .big-1 { grid-area: big-1; }
+  
+  .med-1 { grid-area: med-1; }
+  
+  .big-2 { grid-area: big-2; }
+  
+  .med-2 { grid-area: med-2; }
+  
+  .sml-1 { grid-area: sml-1; }
+  
+  .sml-2 { grid-area: sml-2; }
+  
+  /*--------------------------------------------------------------
+  # BENTO COLOR TEST
+  --------------------------------------------------------------*/
+  .bg1 {
+      background-color: purple;
+  }
+  
+  .bg2 {
+      background-color: blue;
+  }
+  .bg3 {
+      background-color: yellow;
+  }
+  .bg4 {
+      background-color: red;
+  }
+  .bg5 {
+      background-color: green;
+  }
+  .bg6 {
+      background-color: teal;
+  }
+  .bg7 {
+      background-color: black;
+  }
+  .bg8 {
+      background-color: white;
+  }
+  .bgnone {
+      background-color: #00000000;
+      border: #00000000;
+  }
+  
+  /*--------------------------------------------------------------
+  # ???
+  --------------------------------------------------------------*/
+  
+  .hoverlight {
+      scale: 1;
+      transition: all 0.3s;
+  }
+  
+  .hovermed {
+      scale: 1;
+      transition: all 0.3s;
+  }
+  
+  .hoverheavy {
+      scale: 1;
+      transition: all 0.3s;
+  }
+  
+  .hoverlight:hover {
+      scale: 1.05;
+      transition: all 0.3s;
+  }
+  
+  .hovermed:hover {
+      scale: 1.1;
+      transition: all 0.3s;
+  }
+  
+  .hoverheavy:hover {
+      scale: 1.3;
+      transition: all 0.3s;
+  }
+
 .bg{
     width: 100%;
     height: 100vh;
@@ -69,47 +162,157 @@ a {
     background-position: center;
     background-attachment: fixed;
 }
+/* -----------------------------------------------------------
+                    NAVIGATION BAR
+    ----------------------------------------------------------*/
 
-.header{
+header{
     position: fixed;
-    padding-left: 200px;
-    padding-right: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 50px 200px;
     width: 100%;
     height: 80px;
-    background-color: rgba(82, 136, 220);
     z-index: 100;
 }
 
-.navbarmenu{
-    color: bisque;
-    font-weight: bold;
-    left: 0;
-    letter-spacing: 2px;
+header ul{
+    position: absolute;
+    margin-right: 10%;
+    display: flex;
+    right: 0;
 }
 
-.navbarmenu:hover{
-    color: rgb(113, 167, 15);
-    scale: 1.5;
-    transition: 0.2s ease-in-out;
+header ul li{
+    position: relative;
+    margin-top: 15px;
+    list-style: none;
 }
-a{
-    color: wheat ;
+
+header ul li a{
+    position: relative;
+    transition: 0.5s ease-in;
+    margin: 0px 30px;
     text-decoration: none;
+    color: #fff;
     font-weight: bold;
-	transition: 0.3s;
 }
-a:hover{
-    transition: 0.2s;
-    color: beige;
-    scale: 1.5;
 
+header ul li a:hover{
+    color: black;
+    transition: 0.5s ease-in;
+    font-weight: bold;
 }
 
 .logoSize{
-    width: 170px;
+    position: absolute;
+    transform: translate(0, 0);
+    left: 10%;
+    top: 100px;
+    width: 800px;
+    height: auto;
+    transition: 1.5s ease-in-out;
+    fill: #cfc7ad;
+
+}
+.grouplogoDIV{
+    position: absolute;
+    left: 10%;
+    width: 400px;
+    margin: 0;
+}
+
+#grouplogo{
+    width: 200px;
     height: auto;
 }
 
+#presents{
+    position: relative;
+    color: white;
+    font-size: 25px;
+    left: 15px;
+    top: 10px;
+    transition: 0.3s;
+    font-weight: 400;
+
+}
+header.sticky #presents{
+    font-size: 0;
+    color: rgba(255, 255, 255, 0.0);
+}
+header.sticky .logoSize{
+    position: absolute;
+    top: 20px;
+    width: 170px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    fill: white;
+
+}
+.glow{
+    text-shadow:
+    0 0 0.5rem white,
+    0 0 1rem white,
+    0 0 1.5rem white,
+    0 0 2.5rem red,
+    0 0 4rem yellow,
+    0 0 5.5rem yellow,
+    0 0 6rem orange,
+    0 0 9.5rem orange;
+}
+
+
+/* -------------------------------
+        NAV BAR STICKY
+---------------------------------*/
+
+
+header.sticky{
+    padding: 5px 200px;
+    background: #041E5F;
+}
+
+header.sticky ul li a{
+    color: white;
+}
+
+header.sticky ul li a:hover{
+    color: green;
+}
+
+/*
+header.sticky .logoSize,
+header.sticky ul{
+    padding: 20px 100px;
+}*/
+
+
+/*------------------------------------
+     NAVBAR END
+---------------------------------------*/
+
+
+/*------------------------------------
+        B2T
+--------------------------------------*/
+.b2t{
+    scale: 1;
+    background-color: rgba(82, 136, 220, 0.5);
+	width: 50px;
+	height: 50px;
+}
+.sticky .b2t{
+    scale: 100;
+
+}
+
+
+/*------------------------------------
+        B2T END
+--------------------------------------*/
 .calign{
     align-items: center;
 }
@@ -129,14 +332,9 @@ a:hover{
 }
 
 .paddingLR{
-    padding-left: 225px;
-    padding-right: 225px;
+    padding-left: 10%;
+    padding-right: 10%;
 
 }
 
-.bgDIV1{
-    background-image: url(LUNGGATI POSTER.png)!important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 80%;
-}
+
