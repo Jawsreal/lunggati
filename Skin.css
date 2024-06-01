@@ -231,6 +231,11 @@ header ul li a:hover{
     transition: 1.0s ;
     fill: #FFF7C5;
 
+    animation-name: animate;
+    animation-duration: 0.8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
 }
 .grouplogoDIV{
     position: absolute;
@@ -245,20 +250,26 @@ header ul li a:hover{
     transition: 0.5s;
 }
 
-#presents{
-    position: relative;
-    color: white;
-    font-size: 25px;
-    left: 15px;
-    top: 5px;
-    transition: 0.5s;
-    font-weight: 400;
+@keyframes animate{
+    0%{
+        filter: drop-shadow(0px 0px 1px #fff)
+        drop-shadow(0px 0px 3px #fff)
+        drop-shadow(0px 0px 5px yellow)
+        drop-shadow(0px 0px 10px orange)
+        drop-shadow(0px 0px 15px red);
+    }
 
+    100%{
+        filter: drop-shadow(0px 0px 2px #fff)
+        drop-shadow(0px 0px 5px #fff)
+        drop-shadow(0px 0px 10px yellow)
+        drop-shadow(0px 0px 15px orange)
+        drop-shadow(0px 0px 20px red);
+
+
+    }
 }
-header.sticky #presents{
-	visibility: hidden;
-    color: rgba(255, 255, 255, 0.0);
-}
+
 header.sticky .logoSize{
     position: absolute;
     top: 15px;
@@ -266,6 +277,9 @@ header.sticky .logoSize{
     left: 10%;
     fill: white;
 
+    animation-name: none;
+
+   
 }
 
 header.sticky #grouplogo{
@@ -274,19 +288,6 @@ header.sticky #grouplogo{
     transition: 0.5s;
 	align-items: center;
 }
-
-.glow{
-    text-shadow:
-    0 0 0.5rem white,
-    0 0 1rem white,
-    0 0 1.5rem white,
-    0 0 2.5rem red,
-    0 0 4rem yellow,
-    0 0 5.5rem yellow,
-    0 0 6rem orange,
-    0 0 9.5rem orange;
-}
-
 
 /* -------------------------------
         NAV BAR STICKY
