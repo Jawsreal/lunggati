@@ -216,7 +216,7 @@ header ul li a{
 }
 
 header ul li a:hover{
-    color: #FFF34C;
+    color: #FFF7C5;
     transition: 0.3s !important;
     font-weight: bold;
 }
@@ -225,7 +225,7 @@ header ul li a:hover{
     position: absolute;
     transform: translate(0, 0);
     left: 10%;
-    top: 100px;
+    top: 40px;
     width: 800px;
     height: auto;
     transition: 1.0s ;
@@ -244,28 +244,25 @@ header ul li a:hover{
     margin: 0;
 }
 
-#grouplogo{
+.grouplogo{
     width: 200px;
     height: auto;
-    transition: 0.5s;
+    left: 50%;
 }
 
 @keyframes animate{
     0%{
-        filter: drop-shadow(0px 0px 1px #fff)
-        drop-shadow(0px 0px 3px #fff)
-        drop-shadow(0px 0px 5px yellow)
-        drop-shadow(0px 0px 10px orange)
-        drop-shadow(0px 0px 15px red);
+        filter:
+        drop-shadow(0px 0px 3px #FFFF80)
+        drop-shadow(0px 0px 4px #FFFF40)
+        drop-shadow(0px 0px 5px blue));
     }
 
     100%{
-        filter: drop-shadow(0px 0px 2px #fff)
-        drop-shadow(0px 0px 5px #fff)
-        drop-shadow(0px 0px 10px yellow)
-        drop-shadow(0px 0px 15px orange)
-        drop-shadow(0px 0px 20px red);
-
+        filter:
+        drop-shadow(0px 0px 4px #FFFF80)
+        drop-shadow(0px 0px 5px yellow)
+        drop-shadow(0px 0px 6px blue);
 
     }
 }
@@ -276,17 +273,7 @@ header.sticky .logoSize{
     width: 200px;
     left: 10%;
     fill: white;
-
     animation-name: none;
-
-   
-}
-
-header.sticky #grouplogo{
-    width: 150px;
-    height: auto;
-    transition: 0.5s;
-	align-items: center;
 }
 
 /* -------------------------------
@@ -304,7 +291,7 @@ header.sticky ul li a{
 }
 
 header.sticky ul li a:hover{
-    color: #FFF34C;
+    color: #FFF7C5;
 	transition: 0.3s !important;
 }
 
@@ -339,13 +326,24 @@ header.sticky2 .b2t{
 }
 .b2t:hover{
 	scale: 1.2;
-	background-color: #FFF34C;
+	background-color: #FFF7C5;
     transition: 0.3s !important;
 }
 
 /*------------------------------------
         B2T END
 --------------------------------------*/
+
+/*-----------------------------------
+            FOOTER
+------------------------------------*/
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #041E5F;
+
+}
+
 .calign{
     align-items: center !important;
 }
@@ -369,5 +367,3 @@ header.sticky2 .b2t{
     padding-right: 10%;
 
 }
-
-
