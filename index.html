@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="Skin.css">
         <script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         
     </head>
 
@@ -69,33 +70,42 @@
                 C300.7,162.5,303.2,171.7,311.4,179.8z"/>
             </svg>
             
-                <div class="grouplogoDiv" >
-                    <img src="images/group logo.svg" id="grouplogo">
-                    <b id="presents">presents</b>
-                </div>
                 <ul>
 
-                    <li><a href="#gallery">GALLERY</a></li>
-                    <li><a href="#team">THE TEAM</a></li>
-                    <li><a href="#videos">WATCH</a></li>
+                    <li class="hovermed"><a href="#gallery">GALLERY</a></li>
+                    <li class="hovermed"><a href="#team">TEAM</a></li>
+                    <li class="hovermed"><a href="#videos">WATCH</a></li>
 
                 </ul>
                
+			   
+   <!--BACK TO TOP-->
+		<div class="position-fixed bottom-0 end-0">
+			<a href="#home" class="">
+				<div class="b2t rounded-circle d-flex justify-content-center calign">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#041E5F" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+					  <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+					</svg>
+				</div>
+			</a>
+		</div>
+			   
+			   
         </header>
             <section class="banner"></section>
-            <script type="text/javascript">
-                window.addEventListener("scroll", function(){
-                    var header = document.querySelector("header");
-                    header.classList.toggle("sticky", window.scrollY > 0)
-                })
-            </script>
+
         <!--SECTION 1-->
         <div id="home">
                
                 <img src="images/LUNGGATI POSTER.jpg" class="poster">
                 
-                <div class="row-6 d-flex justify-content-center calign py-5">
-                    <iframe style="position:relative;" width="800px" height="500px" src="https://www.youtube.com/embed/34GJeemh0Gk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+                <div class="row">
+					<div class="py-5 paddingLR justify-content-center calign" >
+						<h1 class="h1 txtw d-flex justify-content-center">TRAILER</h1>
+					</div>
+				</div>
+                <div class="row-6 d-flex justify-content-center calign pb-5">
+                    <iframe class="rounded" style="position:relative;" width="1100px" height="620px" src="https://www.youtube.com/embed/34GJeemh0Gk?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
                </div>
         </div>
 		
@@ -111,33 +121,34 @@
             <div class="row">
 
         <!---ACT 1 --->
-                <div class="col-4 d-flex justify-content-center calign" data-aos="slide-right" data-aos-duration="1500">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/BG.png" alt="Card image cap">
+                <div class="col-4 d-flex justify-content-center calign" data-aos="slide-right" data-aos-duration="1500" data-bs-toggle="modal" data-bs-target="#Modalvid1">
+                    <div class="card hovermed" style="width: 50rem;">
+                        <img class="card-img-top clickable" src="images/BG.png" alt="Card image cap" type="button">
                         <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;">Card title</h5>
+                        <h5 class="card-title" style="text-align: center;">Act 1 Title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
+				
 
                 <!---ACT 2 --->
-                <div class="col-4 d-flex justify-content-center calign" data-aos="slide-up" data-aos-duration="1500">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/BG.png" alt="Card image cap">
+                <div class="col-4 d-flex justify-content-center calign" data-aos="slide-up" data-aos-duration="1500" data-bs-toggle="modal" data-bs-target="#Modalvid2">
+                    <div class="card hovermed" style="width: 50rem;">
+                        <img class="card-img-top clickable" src="images/BG.png" alt="Card image cap" type="button">
                         <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;">Card title</h5>
+                        <h5 class="card-title" style="text-align: center;">Act 2 Title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
 
                 <!---ACT 3 --->
-                <div class="col-4 d-flex justify-content-center calign" data-aos="slide-left" data-aos-duration="1500">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/BG.png" alt="Card image cap">
+                <div class="col-4 d-flex justify-content-center calign" data-aos="slide-left" data-aos-duration="1500" data-bs-toggle="modal" data-bs-target="#Modalvid3">
+                    <div class="card hovermed" style="width: 50rem;">
+                        <img class="card-img-top clickable" src="images/BG.png" alt="Card image cap" type="button">
                         <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;">Card title</h5>
+                        <h5 class="card-title" style="text-align: center;">Act 3 Title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -269,7 +280,7 @@
        
         <div class="row">
             <div class="col-4 d-flex justify-content-center calign" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
-                <div class="card" style="width: 18rem;">
+                <div class="card hoverlight" style="width: 18rem;">
                     <img class="card-img-top" src="images/BG.png" alt="Card image cap">
                     <div class="card-body">
                     <h5 class="card-title" style="text-align: center;">Card title</h5>
@@ -278,7 +289,7 @@
                 </div>
             </div>
             <div class="col-4 d-flex justify-content-center calign" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000">
-                <div class="card" style="width: 18rem;">
+                <div class="card hoverlight" style="width: 18rem;">
                     <img class="card-img-top" src="images/BG.png" alt="Card image cap">
                     <div class="card-body">
                     <h5 class="card-title" style="text-align: center;">Card title</h5>
@@ -287,7 +298,7 @@
                 </div>
             </div>
             <div class="col-4 d-flex justify-content-center calign" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000">
-                <div class="card" style="width: 18rem;">
+                <div class="card hoverlight" style="width: 18rem;">
                     <img class="card-img-top" src="images/BG.png" alt="Card image cap">
                     <div class="card-body">
                     <h5 class="card-title" style="text-align: center;">Card title</h5>
@@ -298,7 +309,7 @@
         </div>
         <div class="row py-5">
             <div class="col-6 d-flex justify-content-center calign" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000">
-                <div class="card" style="width: 18rem;">
+                <div class="card hoverlight" style="width: 18rem;">
                     <img class="card-img-top" src="images/BG.png" alt="Card image cap">
                     <div class="card-body">
                     <h5 class="card-title" style="text-align: center;">Card title</h5>
@@ -307,7 +318,7 @@
                 </div>
             </div>
             <div class="col-6 d-flex justify-content-center calign" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000">
-                <div class="card" style="width: 18rem;">
+                <div class="card hoverlight" style="width: 18rem;">
                     <img class="card-img-top" src="images/BG.png" alt="Card image cap">
                     <div class="card-body">
                     <h5 class="card-title" style="text-align: center;">Card title</h5>
@@ -317,16 +328,7 @@
             </div>
         </div>
    </div>
-   <!--BACK TO TOP-->
-		<div class="position-fixed bottom-0 end-0" data-aos="slide-up" data-aos-delay="1500" data-aos-duration="1000">
-			<a href="#home" class="">
-				<div class="back2top rounded-circle d-flex justify-content-center calign">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-					  <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
-					</svg>
-				</div>
-			</a>
-		</div>
+
 		
 <!---!!!****MODALS!!!****--->
 <!---!!!****MODALS!!!****--->
@@ -402,11 +404,78 @@
                                           </div>
                                         </div>
                                       </div>
-      
+									  
+									  
+									<!---MODAL VID 1--->
+										<div class="modal fade" id="Modalvid1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										  <div class="modal-dialog modal-xl modal-dialog-centered">
+											<div class="modal-content bgnone">
+											  <div class="modal-body d-flex justify-content-center calign">
+													<div>
+														<iframe class="rounded" style="position:relative;" width="1300px" height="700px" src="https://www.youtube.com/embed/34GJeemh0Gk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+													</div>
+												</div>
+											</div>
+										  </div>
+										</div>
+		
+									<!---MODAL VID 2--->
+										<div class="modal fade" id="Modalvid2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										  <div class="modal-dialog modal-xl modal-dialog-centered">
+											<div class="modal-content bgnone">
+											  <div class="modal-body d-flex justify-content-center calign">
+													<div>
+														<iframe class="rounded" style="position:relative;" width="1300px" height="700px" src="https://www.youtube.com/embed/34GJeemh0Gk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+													</div>
+												</div>
+											</div>
+										  </div>
+										</div>
+		
+									<!---MODAL VID 3--->
+										<div class="modal fade" id="Modalvid3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										  <div class="modal-dialog modal-xl modal-dialog-centered">
+											<div class="modal-content bgnone">
+											  <div class="modal-body d-flex justify-content-center calign">
+													<div>
+														<iframe class="rounded" style="position:relative;" width="1300px" height="700px" src="https://www.youtube.com/embed/34GJeemh0Gk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+													</div>
+												</div>
+											</div>
+										  </div>
+										</div>
+
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		
+		<script type="text/javascript">
+                window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0)
+                })
+        </script>
+		<script type="text/javascript">
+                window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky2", window.scrollY > 500)
+                })
+        </script>
+		<script>
+			$("#Modalvid1").on('hidden.bs.modal', function (e) {
+				$("#Modalvid1 iframe").attr("src", $("#Modalvid1 iframe").attr("src"));
+			});
+			
+			$("#Modalvid2").on('hidden.bs.modal', function (e) {
+				$("#Modalvid2 iframe").attr("src", $("#Modalvid2 iframe").attr("src"));
+			});
+			
+			$("#Modalvid3").on('hidden.bs.modal', function (e) {
+				$("#Modalvid3 iframe").attr("src", $("#Modalvid3 iframe").attr("src"));
+			});
+		</script>
         <script>
         AOS.init();
         </script>
+
     </body>
 
 </html>

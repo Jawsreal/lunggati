@@ -16,9 +16,14 @@ html {
 a {
     cursor:url(aero_arrow.cur),auto;}
 	
+.clickable {
+	cursor:url(aero_arrow.cur),auto !important;}
+	
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+/*-------
+
 .back2top {
 	background-color: rgba(82, 136, 220, 0.5);
     margin: 30px;
@@ -32,6 +37,10 @@ a {
     transition: 0.3s;
 }
 
+-------*/
+
+/*--------------------------------------------------------------
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Gallery button backgroung color
@@ -61,7 +70,7 @@ a {
 # ???
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# Back to top button
+# BENTO GRID
 --------------------------------------------------------------*/
 
 .containergrid {  display: grid;
@@ -126,33 +135,37 @@ a {
   
   .hoverlight {
       scale: 1;
-      transition: all 0.3s;
+      transition: all 0.3s !important;
   }
   
   .hovermed {
       scale: 1;
-      transition: all 0.3s;
+      transition: all 0.3s !important;
   }
   
   .hoverheavy {
       scale: 1;
-      transition: all 0.3s;
+      transition: all 0.3s !important;
   }
   
   .hoverlight:hover {
       scale: 1.05;
-      transition: all 0.3s;
+      transition: all 0.3s !important;
   }
   
   .hovermed:hover {
       scale: 1.1;
-      transition: all 0.3s;
+      transition: all 0.3s !important;
   }
   
   .hoverheavy:hover {
       scale: 1.3;
-      transition: all 0.3s;
+      transition: all 0.3s !important;
   }
+
+/* -----------------------------------------------------------
+                    webpage background
+    ----------------------------------------------------------*/
 
 .bg{
     width: 100%;
@@ -189,6 +202,7 @@ header ul li{
     position: relative;
     margin-top: 15px;
     list-style: none;
+	transition: 0.3s !important;
 }
 
 header ul li a{
@@ -198,11 +212,12 @@ header ul li a{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+	transition: 0.3s !important;
 }
 
 header ul li a:hover{
-    color: black;
-    transition: 0.5s ease-in;
+    color: #FFF34C;
+    transition: 0.3s !important;
     font-weight: bold;
 }
 
@@ -213,8 +228,8 @@ header ul li a:hover{
     top: 100px;
     width: 800px;
     height: auto;
-    transition: 1.5s ease-in-out;
-    fill: #cfc7ad;
+    transition: 1.0s ;
+    fill: #FFF7C5;
 
 }
 .grouplogoDIV{
@@ -227,6 +242,7 @@ header ul li a:hover{
 #grouplogo{
     width: 200px;
     height: auto;
+    transition: 0.5s;
 }
 
 #presents{
@@ -234,24 +250,31 @@ header ul li a:hover{
     color: white;
     font-size: 25px;
     left: 15px;
-    top: 10px;
-    transition: 0.3s;
+    top: 5px;
+    transition: 0.5s;
     font-weight: 400;
 
 }
 header.sticky #presents{
-    font-size: 0;
+	visibility: hidden;
     color: rgba(255, 255, 255, 0.0);
 }
 header.sticky .logoSize{
     position: absolute;
-    top: 20px;
-    width: 170px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    top: 15px;
+    width: 200px;
+    left: 10%;
     fill: white;
 
 }
+
+header.sticky #grouplogo{
+    width: 150px;
+    height: auto;
+    transition: 0.5s;
+	align-items: center;
+}
+
 .glow{
     text-shadow:
     0 0 0.5rem white,
@@ -280,7 +303,8 @@ header.sticky ul li a{
 }
 
 header.sticky ul li a:hover{
-    color: green;
+    color: #FFF34C;
+	transition: 0.3s !important;
 }
 
 /*
@@ -296,25 +320,33 @@ header.sticky ul{
 
 
 /*------------------------------------
-        B2T
+	 B2T  Back to top button v2
 --------------------------------------*/
 .b2t{
-    scale: 1;
-    background-color: rgba(82, 136, 220, 0.5);
+    
+    background-color: #fdf8e3;
+	margin-bottom: -50px;
+	margin-right: 50px;
 	width: 50px;
 	height: 50px;
+	transition: 1s;
 }
-.sticky .b2t{
-    scale: 100;
-
+header.sticky2 .b2t{
+    
+	margin-bottom: 50px;
+	transition: 1s;
 }
-
+.b2t:hover{
+	scale: 1.2;
+	background-color: #FFF34C;
+    transition: 0.3s !important;
+}
 
 /*------------------------------------
         B2T END
 --------------------------------------*/
 .calign{
-    align-items: center;
+    align-items: center !important;
 }
 
 .poster{
@@ -328,7 +360,7 @@ header.sticky ul{
 }
 
 .txtw{
-	color: beige;
+	color: white;
 }
 
 .paddingLR{
