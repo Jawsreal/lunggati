@@ -213,6 +213,8 @@ header ul li a{
     color: #fff;
     font-weight: bold;
 	transition: 0.3s !important;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: normal;
 }
 
 header ul li a:hover{
@@ -232,7 +234,7 @@ header ul li a:hover{
     fill: #FFF7C5;
 
     animation-name: animate;
-    animation-duration: 0.8s;
+    animation-duration: 2.0s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 
@@ -244,11 +246,6 @@ header ul li a:hover{
     margin: 0;
 }
 
-.grouplogo{
-    width: 200px;
-    height: auto;
-    left: 50%;
-}
 
 @keyframes animate{
     0%{
@@ -338,11 +335,68 @@ header.sticky2 .b2t{
             FOOTER
 ------------------------------------*/
 footer{
-    width: 100%;
-    height: 100px;
     background-color: #041E5F;
-
+    width: 100%;
+    height: 200px;
 }
+
+hr {
+    color: #fdf8e3;
+    margin: 50px;
+}
+
+.iconsize{
+    fill: #fdf8e3;
+    width: 50px;
+    height: 50px;
+    padding: 10px 0px;
+}
+.grouplogo{
+    width: 200px;
+    height: auto;
+    left: 50%;
+}
+.copyright{
+    color: #fdf8e3;
+}
+
+/*-----------------------------------
+            FOOTER END
+------------------------------------*/
+
+
+/*-----------------------------------
+            TEAM CARDS
+------------------------------------*/
+
+.teamcard{
+    padding: 15px;
+}
+
+.teamcardout{
+    padding: 20px;
+    background-color: #fdf8e3;
+}
+
+.teamcardout img{
+    border-radius: 100%;
+    
+}
+.shadow{
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.EPcard{
+    border-radius: 20px;
+}
+.EPcardouter{
+    padding: 20px;
+
+    background-color: #fdf8e3;
+}
+
+/*-----------------------------------
+            TEAM CARDS
+------------------------------------*/
 
 .calign{
     align-items: center !important;
