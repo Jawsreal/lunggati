@@ -287,7 +287,7 @@ margin: 0 !important;
 }
   
 .bento2bg4 {
-    background: url('images/adult face.png') white;
+    background: url('images/adult\ face-01.png') white;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -467,7 +467,7 @@ margin: 0 !important;
                     NAVIGATION BAR
     ----------------------------------------------------------*/
 
-header{
+header .navbar{
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -479,21 +479,21 @@ header{
     z-index: 100;
 }
 
-header ul{
+header .navbar ul{
     position: absolute;
     margin-right: 10%;
     display: flex;
     right: 0;
 }
 
-header ul li{
+header .navbar ul li{
     position: relative;
     margin-top: 15px;
     list-style: none;
 	transition: 0.3s !important;
 }
 
-header ul li a{
+header .navbar ul li a{
     position: relative;
     transition: 0.5s ease-in;
     margin: 0px 30px;
@@ -505,18 +505,81 @@ header ul li a{
     font-weight: normal;
 }
 
-header ul li a:hover{
+header .navbar ul li a:hover{
     color: #FFF7C5;
     transition: 0.3s !important;
     font-weight: bold;
 }
 
+.navbar .toggle_btn{
+    position: absolute;
+    color: #fff;
+    font-size: 1.5rem;
+    right: 0;
+    margin-right: 10%;
+    display: none;
+}
+/* DROPDOWN MENU */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0px;
+    width: 300px;
+    background: #fdf8e3;
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 150px;
+    text-decoration: none;
+}
+
+.dropdown_menu.open li a{
+    text-decoration: none;
+    color: #041E5F;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* RESPONSIVE */
+@media (max-width: 992px){
+    .navbar ul li{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px){
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+ 
+    }
+}
 .logoSize{
     position: absolute;
     transform: translate(0, 0);
     left: 10%;
     top: 40px;
-    width: 800px;
+    width: 40vw;
     height: auto;
     transition: 1.0s ;
     fill: #FFF7C5;
@@ -552,7 +615,7 @@ header ul li a:hover{
     }
 }
 
-header.sticky .logoSize{
+header.sticky .navbar .logoSize{
     position: absolute;
     top: 15px;
     width: 200px;
@@ -566,16 +629,16 @@ header.sticky .logoSize{
 ---------------------------------*/
 
 
-header.sticky{
+header.sticky .navbar{
     padding: 5px 200px;
     background: #041E5F;
 }
 
-header.sticky ul li a{
+header.sticky .navbar ul li a{
     color: white;
 }
 
-header.sticky ul li a:hover{
+header.sticky .navbar ul li a:hover{
     color: #FFF7C5;
 	transition: 0.3s !important;
 }
@@ -603,11 +666,13 @@ header.sticky ul{
 	width: 50px;
 	height: 50px;
 	transition: 1s;
+    z-index: 1000;
 }
 header.sticky2 .b2t{
     
 	margin-bottom: 50px;
 	transition: 1s;
+    z-index: 1000;
 }
 .b2t:hover{
 	scale: 1.2;
@@ -625,28 +690,33 @@ header.sticky2 .b2t{
 footer{
     background-color: #041E5F;
     width: 100%;
-    height: 200px;
+    height: 100px;
 }
 
 hr {
     color: #fdf8e3;
-    margin: 50px;
+    margin: 15px;
 }
 
 .iconsize{
     fill: #fdf8e3;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     padding: 10px 0px;
+    margin-top: 5px;
 }
 .grouplogo{
-    width: 200px;
+    width: 120px;
     height: auto;
     left: 50%;
+    padding-top: 5px;
 }
-.copyright{
+footer p{
+    font-size: 10px;
     color: #fdf8e3;
+    padding-top: 5px;
 }
+
 
 /*-----------------------------------
             FOOTER END
@@ -709,3 +779,9 @@ hr {
     padding-right: 10%;
 
 }
+
+.epbox{
+ margin-bottom: 15px;
+}
+
+
