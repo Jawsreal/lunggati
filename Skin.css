@@ -465,10 +465,10 @@ a {
     height:  400px;
     margin: 0px 30px;
 }
-
+/*
 .preview:hover .slider_preview{
     animation-play-state: paused;
-}
+}*/
 
 @keyframes slide {
     from{
@@ -594,7 +594,7 @@ a {
     ----------------------------------------------------------*/
 
 .bg{
-	background-color: #d2cdc9;
+	background-color: #e1d1b8;
 }
 /* -----------------------------------------------------------
                     NAVIGATION BAR
@@ -649,7 +649,7 @@ header .navbar ul li a:hover{
     ----------------------------------------------------------*/
 
 .navbar .toggle_btn{
-    position: absolute;
+    position: fixed;
     color: #fff;
     font-size: 1.5rem;
     right: 0;
@@ -667,7 +667,6 @@ header .navbar ul li a:hover{
     background: #fdf8e3;
     border-radius: 10px;
     overflow: hidden;
-
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -823,13 +822,16 @@ header.sticky ul{
 --------------------------------------*/
 .b2t{
     
-    background-color: #fdf8e3;
+    background-color: #46a5f1;
 	margin-bottom: -50px;
 	margin-right: 50px;
 	width: 50px;
 	height: 50px;
 	transition: 1s;
     z-index: 1000;
+}
+.b2t img{
+    width: 25px;
 }
 header.sticky .b2t{
     
@@ -839,9 +841,10 @@ header.sticky .b2t{
 }
 .b2t:hover{
 	scale: 1.2;
-	background-color: #FFF7C5;
+	background-color: #4b3f60;
     transition: 0.3s !important;
 }
+
 
 /*------------------------------------
         B2T END
