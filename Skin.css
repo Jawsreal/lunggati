@@ -281,56 +281,56 @@ a {
   --------------------------------------------------------------*/
   
   .modalbg1 {
-      background: url('images/moodboard1.JPG') black;
+      background: url('images/moodboard1.jpg') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
   }
     
   .modalbg2 {
-      background: url('images/moodboard2.JPG') black;
+      background: url('images/moodboard2.jpg') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
   }
     
   .modalbg3 {
-      background: url('images/moodboard3.JPG') black;
+      background: url('images/moodboard3.jpg') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
   }
     
   .modalbg4 {
-      background: url('images/moodboard4.JPG') black;
+      background: url('images/moodboard4.jpg') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
   }
     
   .modalbg5 {
-      background: url('images/moodboard5.JPG') black;
+      background: url('images/moodboard5.jpg') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
   }
     
   .modalbg6 {
-      background: url('images/moodboard1.JPG') black;
+      background: url('images/moodboard1.jpg') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
   }
     
   .modalbg7 {
-      background: url('images/moodboard1.JPG') black;
+      background: url('images/moodboard1.jpg') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
   }
     
   .modalbg8 {
-      background: url('images/moodboard1.JPG') black;
+      background: url('images/moodboard1.jpg') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
@@ -448,6 +448,38 @@ a {
 /* -----------------------------------------------------------
                     slider carousel start
     ----------------------------------------------------------*/
+.slider_preview{
+    display: inline-block;
+    animation: slide 30s infinite linear;
+    
+}
+
+.preview{
+    overflow: hidden;
+    padding: 60px 0px;
+    background: #041E5F;
+    white-space: nowrap;
+}
+
+.slider_preview img{
+    height:  400px;
+    margin: 0px 30px;
+}
+
+.preview:hover .slider_preview{
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+/*
 	
 	.sliderr {
 		height: 600px;
@@ -463,8 +495,8 @@ a {
 	
 	.slide-track {
 		display: flex;
-		width: calc(1920px * 8);
-		animation: scroll1 100s linear infinite;
+		width: 100%;
+		animation: 5s scroll1 infinite linear;
 	}
 	
 	.slide-track:hover {
@@ -477,7 +509,7 @@ a {
 		}
 		
 		100% {
-			transform: translateX(calc(-1000px * 4));
+			transform: translateX(-100%);
 		}
 	}
 	
@@ -490,10 +522,9 @@ a {
 		perspective: 100px;
 		border-radius: 20px;
 	}
-	
+	*/
 	
 	.img100 {
-		width: 100%;
 		transition: 0.5s;
 	}
 	
@@ -575,7 +606,7 @@ header .navbar{
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
-    padding: 50px 200px;
+    padding: 10px 10%;
     width: 100%;
     height: 80px;
     z-index: 100;
@@ -610,7 +641,7 @@ header .navbar ul li a{
 header .navbar ul li a:hover{
     color: #FFF7C5;
     transition: 0.3s !important;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 /* -----------------------------------------------------------
@@ -628,7 +659,7 @@ header .navbar ul li a:hover{
 /* DROPDOWN MENU */
 .dropdown_menu{
     display: none;
-    position: ;
+    position: absolute;
     right: 2rem;
     top: 60px;
     height: 0px;
@@ -656,8 +687,10 @@ header .navbar ul li a:hover{
 }
 
 .dropdown_menu li{
+    margin-top: 4px;
     padding: 0.7rem;
     display: flex;
+    font-weight: bold;
     align-items: center;
     justify-content: center;
 }
@@ -669,6 +702,7 @@ header .navbar ul li a:hover{
     }
 
     .navbar .toggle_btn{
+        position: fixed;
         display: block;
     }
 
@@ -678,11 +712,26 @@ header .navbar ul li a:hover{
 }
 
 @media (max-width: 576px){
+    .dropdown_menu .toggle_btn{
+        margin-top: 4px;
+        padding: 0.7rem;
+        display: flex;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
     .dropdown_menu {
         left: 2rem;
         width: unset;
- 
     }
+
+    header.sticky {
+        width: 100%;
+    }
+
+
 }
 /* -----------------------------------------------------------
                    LOGO
@@ -743,7 +792,7 @@ header.sticky .navbar .logoSize{
 
 
 header.sticky .navbar{
-    padding: 5px 200px;
+    padding: 5px 10%;
     background: #041E5F;
 }
 
@@ -754,6 +803,7 @@ header.sticky .navbar ul li a{
 header.sticky .navbar ul li a:hover{
     color: #FFF7C5;
 	transition: 0.3s !important;
+    font-weight: bolder;
 }
 
 /*
@@ -923,8 +973,15 @@ footer p{
 .paddingLR{
     padding-left: 10%;
     padding-right: 10%;
-
 }
+.paddingLR h1{
+    color: #041E5F;
+    font-weight: bold;
+}
+.paddingLR h3{
+    color: #041E5F;
+}
+
 
 .epbox{
  margin-bottom: 15px;
