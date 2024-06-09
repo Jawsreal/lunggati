@@ -281,56 +281,56 @@ a {
   --------------------------------------------------------------*/
   
   .modalbg1 {
-      background: url('images/moodboard1.jpg') black;
+      background: url('images/moodboard1.JPG') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
   }
     
   .modalbg2 {
-      background: url('images/moodboard2.jpg') black;
+      background: url('images/moodboard2.JPG') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
   }
     
   .modalbg3 {
-      background: url('images/moodboard3.jpg') black;
+      background: url('images/moodboard3.JPG') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
   }
     
   .modalbg4 {
-      background: url('images/moodboard4.jpg') black;
+      background: url('images/moodboard4.JPG') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
   }
     
   .modalbg5 {
-      background: url('images/moodboard5.jpg') black;
+      background: url('images/moodboard5.JPG') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
   }
     
   .modalbg6 {
-      background: url('images/moodboard1.jpg') black;
+      background: url('images/moodboard1.JPG') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
   }
     
   .modalbg7 {
-      background: url('images/moodboard1.jpg') black;
+      background: url('images/moodboard1.JPG') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
   }
     
   .modalbg8 {
-      background: url('images/moodboard1.jpg') black;
+      background: url('images/moodboard1.JPG') black;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
@@ -366,7 +366,7 @@ a {
 }
   
 .bento2bg4 {
-    background: url('images/adult\ face-01.png') white;
+    background: url('images/adult face-01.png') white;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -402,6 +402,78 @@ a {
 
 .bento2bg9 {
     background: url('images/teen face.png') white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/*--------------------------------------------------------------
+# ???
+--------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+  # BENTO MOODBOARD BACKGROUND IMAGE 1
+  --------------------------------------------------------------*/
+  
+  .bento3bg1 {
+    background: url('images/mood1.png') black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: ;
+}
+  
+.bento3bg2 {
+    background: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+  
+.bento3bg3 {
+    background: url('images/mood3.png') black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+  
+.bento3bg4 {
+    background: url('images/mood4.PNG') black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+  
+.bento3bg5 {
+    background: url('images/mood5.png') black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+  
+.bento3bg6 {
+    background: url('images/mood6.png') black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+  
+.bento3bg7 {
+    background: url('images/mood7.png') black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+  
+.bento3bg8 {
+    background: url('images/mood2.PNG') black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.bento3bg9 {
+    background: url('images/mood8.png') black;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -478,51 +550,6 @@ a {
         transform: translateX(-100%);
     }
 }
-
-/*
-	
-	.sliderr {
-		height: 600px;
-		margin: auto;
-		position: relative;
-		width: 100%;
-		display: grid;
-		place-items: center;
-		padding-bottom: 5rem !important;
-		overflow: hidden;
-	}
-	
-	
-	.slide-track {
-		display: flex;
-		width: 100%;
-		animation: 5s scroll1 infinite linear;
-	}
-	
-	.slide-track:hover {
-		animation-play-state: paused;
-	}
-	
-	@keyframes scroll1 {
-		0% {
-			transform: translateX(0);
-		}
-		
-		100% {
-			transform: translateX(-100%);
-		}
-	}
-	
-	.slidee {
-		height: 1px;
-		width: 1000px;
-		display: flex;
-		align-items: center;
-		padding: 15px;
-		perspective: 100px;
-		border-radius: 20px;
-	}
-	*/
 	
 	.img100 {
 		transition: 0.5s;
@@ -568,22 +595,13 @@ a {
 		.slide-track {
 			width: calc(600px * 8);
 		}
-
 	}
 	
 	@media (max-width: 767px){
-		.sliderr {
-			height: 250px;
-		}
-
-		.slidee{
-			width: 350px;
+		.slider_preview img {
+			height: 200px;
 		}
 		
-		.slide-track {
-			width: calc(400px * 8);
-		}
-
 	}
 /* -----------------------------------------------------------
                     slider carousel end
@@ -594,7 +612,7 @@ a {
     ----------------------------------------------------------*/
 
 .bg{
-	background-color: #e1d1b8;
+	background-color: #e0d1b9;
 }
 /* -----------------------------------------------------------
                     NAVIGATION BAR
@@ -643,25 +661,32 @@ header .navbar ul li a:hover{
     transition: 0.3s !important;
     font-weight: bolder;
 }
+.icons{
+    display: none;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 
 /* -----------------------------------------------------------
                     BURGER
     ----------------------------------------------------------*/
 
-.navbar .toggle_btn{
-    position: fixed;
+.navbar .icons{
+    position: absolute;
     color: #fff;
     font-size: 1.5rem;
     right: 0;
-    padding-right: 10%;
-    display: none;
+    margin-right: 10%;
 }
 /* DROPDOWN MENU */
 .dropdown_menu{
-    display: none;
+    /*display: none;*/
     position: absolute;
     right: 2rem;
-    top: 60px;
+    top: 80px;
     height: 0px;
     width: 300px;
     background: #fdf8e3;
@@ -677,61 +702,46 @@ header .navbar ul li a:hover{
 
 .dropdown_menu.open li a{
     text-decoration: none;
+    font-weight: bolder;
     color: #041E5F;
     font-family: "Hanken Grotesk", sans-serif;
 }
 
-.links {
-	display: flex;
-}
-
 .dropdown_menu li{
-    margin-top: 4px;
     padding: 0.7rem;
     display: flex;
-    font-weight: bold;
     align-items: center;
     justify-content: center;
 }
 
+
+
+
     /* RESPONSIVE */
-@media (max-width: 992px){
-    .navbar ul li{
-        display: none;
+    @media (max-width: 992px){
+        .icons{
+            display: inline-flex;
+            right: 10%;
+        }
+        .navbar ul li a{
+            display: none;
+        }
+
     }
 
-    .navbar .toggle_btn{
-        position: fixed;
-        display: block;
-    }
-
-    .dropdown_menu {
-        display: block;
-    }
-}
-
-@media (max-width: 576px){
-    .dropdown_menu .toggle_btn{
-        margin-top: 4px;
-        padding: 0.7rem;
-        display: flex;
-        font-weight: bold;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    
-    .dropdown_menu {
-        left: 2rem;
-        width: unset;
-    }
-
-    header.sticky {
-        width: 100%;
+    @media (max-width: 576px){
+        .dropdown_menu{
+            left: 2rem;
+            width: unset;
+        }
+      
     }
 
 
-}
+
+
+
+
 /* -----------------------------------------------------------
                    LOGO
     ----------------------------------------------------------*/
@@ -892,7 +902,10 @@ footer p{
 /*-----------------------------------
             TEAM CARDS
 ------------------------------------*/
-
+.act_body h5{
+    font-weight: bolder;
+    font-size: 25px ;
+}
 .teamcard{
     padding: 15px;
 }
@@ -909,12 +922,13 @@ footer p{
 .shadow{
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
+
 .EPcard{
     border-radius: 20px;
 }
+
 .EPcardouter{
     padding: 20px;
-
     background-color: #fdf8e3;
 }
 
