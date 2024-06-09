@@ -156,6 +156,43 @@ a {
   
   .k2-emo { grid-area: k2-emo; }
 
+  .container4 {  display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-auto-columns: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    align-content: center;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+      "mood1 mood1 mood1 mood1 mood1 mood1 mood4 mood4 mood4 mood4 mood4 mood4 mood4 mood4 mood5 mood5 mood5 mood5 mood5 mood5"
+      "mood1 mood1 mood1 mood1 mood1 mood1 mood4 mood4 mood4 mood4 mood4 mood4 mood4 mood4 mood5 mood5 mood5 mood5 mood5 mood5"
+      "mood1 mood1 mood1 mood1 mood1 mood1 mood4 mood4 mood4 mood4 mood4 mood4 mood4 mood4 mood5 mood5 mood5 mood5 mood5 mood5"
+      "mood2 mood2 mood2 mood2 mood2 mood2 mood4 mood4 mood4 mood4 mood4 mood4 mood4 mood4 mood5 mood5 mood5 mood5 mood5 mood5"
+      "mood2 mood2 mood2 mood2 mood2 mood2 mood4 mood4 mood4 mood4 mood4 mood4 mood4 mood4 mood7 mood7 mood7 mood7 mood7 mood7"
+      "mood2 mood2 mood2 mood2 mood2 mood2 mood6 mood6 mood6 mood6 mood6 mood6 mood6 mood6 mood7 mood7 mood7 mood7 mood7 mood7"
+      "mood2 mood2 mood2 mood2 mood2 mood2 mood6 mood6 mood6 mood6 mood6 mood6 mood6 mood6 mood7 mood7 mood7 mood7 mood7 mood7"
+      "mood3 mood3 mood3 mood3 mood3 mood3 mood6 mood6 mood6 mood6 mood6 mood6 mood6 mood6 mood8 mood8 mood8 mood8 mood8 mood8"
+      "mood3 mood3 mood3 mood3 mood3 mood3 mood6 mood6 mood6 mood6 mood6 mood6 mood6 mood6 mood8 mood8 mood8 mood8 mood8 mood8"
+      "mood3 mood3 mood3 mood3 mood3 mood3 mood6 mood6 mood6 mood6 mood6 mood6 mood6 mood6 mood8 mood8 mood8 mood8 mood8 mood8";
+  }
+  
+  .mood1 { grid-area: mood1; }
+  
+  .mood2 { grid-area: mood2; }
+  
+  .mood3 { grid-area: mood3; }
+  
+  .mood4 { grid-area: mood4; }
+  
+  .mood6 { grid-area: mood6; }
+  
+  .mood5 { grid-area: mood5; }
+  
+  .mood7 { grid-area: mood7; }
+  
+  .mood8 { grid-area: mood8; }
   
 
 
@@ -233,6 +270,40 @@ a {
 	
 	@media (max-width: 496px){
 		.container3 {
+    grid-template-columns: 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px;
+    grid-template-rows: 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px;
+	gap: 3px 3px;
+		}
+
+	}
+
+    @media (max-width: 1421px){
+		.container4 {
+    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+	gap: 15px 15px;
+		}
+	}
+	@media (max-width: 1098px){
+		.container4 {
+    grid-template-columns: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+	gap: 10px 10px;
+		}
+
+	}
+	
+	@media (max-width: 794px){
+		.container4 {
+    grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+    grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+	gap: 5px 5px;
+		}
+
+	}
+	
+	@media (max-width: 496px){
+		.container4 {
     grid-template-columns: 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px;
     grid-template-rows: 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px;
 	gap: 3px 3px;
@@ -412,10 +483,10 @@ a {
 --------------------------------------------------------------*/
 
   /*--------------------------------------------------------------
-  # BENTO MOODBOARD BACKGROUND IMAGE 1
+  # BENTO MOODBOARD BACKGROUND IMAGE 3
   --------------------------------------------------------------*/
   
-  .bento3bg1 {
+.bento3bg1 {
     background: url('images/mood1.png') black;
     background-repeat: no-repeat;
     background-position: center;
@@ -424,14 +495,14 @@ a {
 }
   
 .bento3bg2 {
-    background: black;
+    background: url('images/mood2.PNG') black;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
   
 .bento3bg3 {
-    background: url('images/mood3.png') black;
+    background: url('images/mood3.PNG') black;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -466,7 +537,7 @@ a {
 }
   
 .bento3bg8 {
-    background: url('images/mood2.PNG') black;
+    background: url('images/mood8.png') black;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
