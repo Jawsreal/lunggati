@@ -18,6 +18,21 @@ a {
 	
 .clickable {
 	cursor:url(aero_arrow.cur),auto !important;}
+
+
+html *
+{
+   font-family: "Hanken Grotesk", sans-serif !important;
+   text-decoration: none;
+}
+
+h1{
+    font-size: 70px !important;
+}
+
+h3{
+    font-size: 65px;
+}
 	
 /*--------------------------------------------------------------
 # Back to top button
