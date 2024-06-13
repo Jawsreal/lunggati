@@ -691,7 +691,8 @@ h3{
     background: linear-gradient(to top, rgba(0, 33, 99, 0), #e0d1b9);
 }
 .player{
-    padding-top: 20%;
+    position: relative;
+    max-height: 660px;
 }
 
 /* -----------------------------------------------------------
@@ -1084,9 +1085,19 @@ footer p{
 .bglast{
     width: 100%;
     height: auto;
-    background-image: url(images/bg3.jpg);
+    background-image: url("images/sunf.png");
     background-size: cover;
 	background-position: center bottom;
+}
+
+.beyond::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 150%;
+    background: linear-gradient(rgba(255, 255, 255, 0), #e0d1b9);
+    margin-bottom: 0;
+    z-index: -99;
 }
 
 .slide{
@@ -1106,7 +1117,7 @@ footer p{
     font-weight: bold;
 }
 .bglast h1{
-    color: #041E5F;
+    color: #e0d1b9;
 }
 .paddingLR h3{
     color: #e0d1b9;
