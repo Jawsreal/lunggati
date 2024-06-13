@@ -35,27 +35,7 @@ h3{
 }
 	
 /*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-/*-------
 
-.back2top {
-	background-color: rgba(82, 136, 220, 0.5);
-    margin: 30px;
-	width: 50px;
-	height: 50px;
-    transition: 0.3s;
-}
-
-.back2top:hover{
-	scale: 1.2;
-    transition: 0.3s;
-}
-
--------*/
-
-/*--------------------------------------------------------------
---------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Gallery button backgroung color
@@ -325,7 +305,6 @@ h3{
 		}
 
 	}
-
 
 
   /*--------------------------------------------------------------
@@ -615,7 +594,7 @@ h3{
 .preview{
     overflow: hidden;
     padding: 60px 0px;
-    background: #041E5F;
+    background: rgba(26, 24, 38, 0.4);
     white-space: nowrap;
 }
 
@@ -623,10 +602,6 @@ h3{
     height:  400px;
     margin: 0px 30px;
 }
-/*
-.preview:hover .slider_preview{
-    animation-play-state: paused;
-}*/
 
 @keyframes slide {
     from{
@@ -681,6 +656,9 @@ h3{
 		.slide-track {
 			width: calc(600px * 8);
 		}
+        h1{
+            font-size: 40px !important;
+        }
 	}
 	
 	@media (max-width: 767px){
@@ -698,8 +676,24 @@ h3{
     ----------------------------------------------------------*/
 
 .bg{
-	background-color: #e0d1b9;
+    
+	background-image: url("images/bg.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+.bg::before{
+    content: "";
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 33, 99, 0), #e0d1b9);
+}
+.player{
+    padding-top: 20%;
+}
+
 /* -----------------------------------------------------------
                     NAVIGATION BAR
     ----------------------------------------------------------*/
@@ -823,6 +817,7 @@ header .navbar ul li a:hover{
       .cardteam{
         scale: 0.5 ;
       }
+      
     }
 
 .drop1{
@@ -855,6 +850,15 @@ header .navbar ul li a:hover{
     animation-iteration-count: infinite;
 
 }
+
+@media (max-width: 576px){
+    .logoSize{
+        width: 80vw;
+        left: 50%;
+        padding-top: 20%;
+        transform: translate(-50%, 0);
+    }
+}
 .grouplogoDIV{
     position: absolute;
     left: 10%;
@@ -883,10 +887,12 @@ header .navbar ul li a:hover{
 header.sticky .navbar .logoSize{
     position: absolute;
     top: 15px;
+    padding-top: 0;
     width: 200px;
     left: 10%;
     fill: white;
     animation-name: none;
+    transform: translate(0, 0);
 }
 
 /* -------------------------------
@@ -896,7 +902,7 @@ header.sticky .navbar .logoSize{
 
 header.sticky .navbar{
     padding: 5px 10%;
-    background: #041E5F;
+    background: #1a1826;
 }
 
 header.sticky .navbar ul li a{
@@ -905,7 +911,7 @@ header.sticky .navbar ul li a{
 
 header.sticky .navbar ul li a:hover{
     color: #FFF7C5;
-	transition: 0.3s !important;
+	transition: 0.2s !important;
     font-weight: bolder;
 }
 
@@ -958,7 +964,7 @@ header.sticky .b2t{
             FOOTER
 ------------------------------------*/
 footer{
-    background-color: #041E5F;
+    background-color: rgba(26, 24, 38, 0.5);
     width: 100%;
     height: 100px;
 }
@@ -1040,13 +1046,25 @@ footer p{
 }
 
 .posterbg{
-    background-image: url('images/LUNGGATI POSTER.jpg');
+    background-image: url('images/v6.jpg');
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: center;
 	background-size: cover;
 	width: auto;
-    height: 110vh;
-  }
+    height: 100vh;
+}
+
+.posterbg::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 40px;
+    background: linear-gradient(rgba(255, 255, 255, 0), #e0d1b9);
+    z-index: 2;
+
+}
+
   
 .100max {
     width: 100vw;
@@ -1055,14 +1073,14 @@ footer p{
   
 @media (min-width: 1600px){
     .posterbg{
-        height: 130vh;
-		background-position: center bottom;
+		background-position: center;
     }
 
     .100max{
         height: 130vh;
     }
 }
+
 .bglast{
     width: 100%;
     height: auto;
@@ -1070,8 +1088,6 @@ footer p{
     background-size: cover;
 	background-position: center bottom;
 }
-
-
 
 .slide{
     control-color: white;
@@ -1086,16 +1102,16 @@ footer p{
     padding-right: 10%;
 }
 .paddingLR h1{
-    color: #041E5F;
+    color: #e0d1b9;
     font-weight: bold;
 }
-.paddingLR h3{
+.bglast h1{
     color: #041E5F;
 }
-
+.paddingLR h3{
+    color: #e0d1b9;
+}
 
 .epbox{
  margin-bottom: 15px;
 }
-
-
